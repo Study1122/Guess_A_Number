@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>ES8 Project</title>
+  
+  <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <h1 id="heading">Number Guessing Game</h1>
+    <p>Try to guess a number between 1 to 100 and you have 10 attempts to Guess the right number</p>
+    <form class="form">
+      <label for="gameName">Guess a number</label>
+      <input type="text" name="number" id="guessInput" value="" /></br>
+      <input type="submit" name="button" id="submitButton" value="Submit" />
+    </form>
+  </div>
+  <div id="displayArea">
+    <p>Previous Guesses: <span id="prvGuess"></span></p>
+    <p>Remaining Attempts: <span id="remainingAttempt">2</span></p>
+    <p id="msgArea"></p>
+    <p id="hintArea"></p>
+  </div>
+  <script src="config.js"></script>
+</body>
+
+</html>
